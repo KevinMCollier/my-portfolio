@@ -4,7 +4,7 @@ export const projects = [
     subtitle: "Rails and JavaScript",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-1.gif",
+    image: "./ontrack.gif",
     link: "https://www.ontrack.tokyo",
   },
   {
@@ -12,7 +12,7 @@ export const projects = [
     subtitle: "React and Rails",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-2.gif",
+    image: "./weather-haiku.gif",
     link: "https://weather-haiku.xyz/",
   },
   {
@@ -20,7 +20,7 @@ export const projects = [
     subtitle: "Rails",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-3.gif",
+    image: "./okaasan-food.gif",
     link: "https://okasan-food-karasugummi-11b736e4f407.herokuapp.com/",
   },
   {
@@ -28,7 +28,7 @@ export const projects = [
     subtitle: "Rails and JavaScript",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    image: "./project-4.gif",
+    image: "./watchlist.gif",
     link: "https://kevin-watchlist-001-ccc2c6f4cc36.herokuapp.com/",
   },
 ];
