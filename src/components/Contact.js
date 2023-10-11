@@ -49,18 +49,6 @@ export default function Contact() {
                 New York, NY 10007
               </p>
             </div>
-            <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
-              <h2 className="title-font font-semibold text-gray-800 tracking-widest text-xs">
-                EMAIL
-              </h2>
-              <a className="text-indigo-400 leading-relaxed">
-                kevin.collier.dev@email.com
-              </a>
-              <h2 className="title-font font-semibold text-gray-800 tracking-widest text-xs mt-4">
-                PHONE
-              </h2>
-              <p className="leading-relaxed">123-456-7890</p>
-            </div>
           </div>
         </div>
         <form
