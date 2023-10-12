@@ -3,10 +3,10 @@ import React from "react";
 export default function About() {
   return (
     <section id="banner">
-      <div className="container mx-auto flex px-10 py-20 md:flex-row flex-col items center">
-        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
+      <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
+        <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0 items-center">
           <img
-            className="object-cover object-center rounded-full w-64 h-64"
+            className="object-cover object-center rounded-full mx-auto w-64 h-64"
             alt="profile"
             src="./cropped-profile.jpg"
           />
@@ -23,6 +23,9 @@ export default function About() {
             laborum quasi, incidunt dolore iste nostrum cupiditate voluptas?
             Laborum, voluptas natus?
           </p>
+        </div>
+        <div className="center">
+          Long paragraph goes here...............
         </div>
       </div>
     </section>
