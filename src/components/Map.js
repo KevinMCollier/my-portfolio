@@ -11,7 +11,7 @@ export default function Map() {
     const map = new mapboxgl.Map({
       container: mapContainer.current, // Container element
       style: 'mapbox://styles/mapbox/streets-v11', // Style URL
-      center: [139.7216, 35.6281], // Longitude and latitude of your favorite restaurant
+      center: [-99.220630, 30.071480], // Longitude and latitude of your favorite restaurant
       zoom: 15 // Zoom level
     });
 
