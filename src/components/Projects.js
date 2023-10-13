@@ -25,7 +25,7 @@ export default function Projects() {
               </a>
               <div className="sm:ml-8 flex-row mb-6">
                 <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold">{project.title}</h2>
-                <p className="text-left">
+                <p className="text-left mb-6">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap">
