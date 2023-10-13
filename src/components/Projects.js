@@ -17,8 +17,20 @@ export default function Projects() {
             fuga dolore. */}
           </p>
         </div>
-        <div className="flex flex-wrap -m-4">
+        <div className="flex flex-col flex-start items-start -m-4">
           {projects.map((project) => (
+
+
+
+
+
+
+
+
+
+
+
+
             <a
               href={project.link}
               key={project.image}
