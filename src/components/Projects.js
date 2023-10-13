@@ -1,7 +1,6 @@
 import { CodeIcon } from "@heroicons/react/solid";
 import React from "react";
 import { projects } from "../data";
-import { Fragment } from "react";
 
 export default function Projects() {
   return (
@@ -24,7 +23,7 @@ export default function Projects() {
                   src={project.image}
                 />
               </a>
-              <div className="sm:ml-4 flex-row mb-6">
+              <div className="sm:ml-8 flex-row mb-6">
                 <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold">{project.title}</h2>
                 <p className="text-left">
                   {project.description}
