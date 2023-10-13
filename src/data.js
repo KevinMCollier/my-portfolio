@@ -4,6 +4,7 @@ export const projects = [
     subtitle: "Rails and JavaScript",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+    stack: ['Rails', 'Stimulus JS', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
     image: "./ontrack.gif",
     link: "https://www.ontrack.tokyo",
   },
@@ -13,6 +14,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./weather-haiku.gif",
+    stack: ['React JS', 'Rails', 'CSS', 'HTML', 'Heroku', 'Netlify'],
     link: "https://weather-haiku.xyz/",
   },
   {
@@ -21,6 +23,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./okaasan-food.gif",
+    stack: ['Rails', 'Stimulus JS', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
     link: "https://okasan-food-karasugummi-11b736e4f407.herokuapp.com/",
   },
   {
@@ -29,6 +32,7 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./watchlist.gif",
+    stack: ['Rails', 'Vanilla JavaScript', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
     link: "https://kevin-watchlist-001-ccc2c6f4cc36.herokuapp.com/",
   },
 ];
