@@ -28,6 +28,11 @@ export default function Projects() {
                 <p className="text-left">
                   {project.description}
                 </p>
+                <div className="flex flex-wrap">
+                  {project.stack.map((skill, index) =>(
+                    <p className="text-left inline-block mr-2">{skill}{index !== project.stack.length - 1 ? ' |' : ''}</p>
+                  ))}
+                </div>
               </div>
               <br></br>
             </div>
