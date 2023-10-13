@@ -4,7 +4,14 @@ export const projects = [
     subtitle: "Rails and JavaScript",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
-    stack: ['Rails', 'Stimulus JS', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
+    stack: [
+      { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
+      { name: 'Stimulus JS', logo: './stimulus.svg'},
+      { name: 'CSS', logo: './css3.svg'},
+      { name: 'HTML', logo: './html5.svg'},
+      { name: 'PostgreSQL', logo: './postgresql.svg'},
+      { name: 'Heroku', logo: './heroku.svg'},
+    ],
     image: "./ontrack.gif",
     link: "https://www.ontrack.tokyo",
   },
@@ -14,7 +21,14 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./weather-haiku.gif",
-    stack: ['React JS', 'Rails', 'CSS', 'HTML', 'Heroku', 'Netlify'],
+    stack: [
+      { name: 'React JS', logo: './react.svg'},
+      { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
+      { name: 'CSS', logo: './css3.svg'},
+      { name: 'HTML', logo: './html5.svg'},
+      { name: 'Heroku', logo: './heroku.svg'},
+      { name: 'Netlify', logo: './netlify.svg'}
+    ],
     link: "https://weather-haiku.xyz/",
   },
   {
@@ -23,7 +37,14 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./okaasan-food.gif",
-    stack: ['Rails', 'Stimulus JS', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
+    stack: [
+      { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
+      { name: 'Stimulus JS', logo: './stimulus.svg'},
+      { name: 'CSS', logo: './css3.svg'},
+      { name: 'HTML', logo: './html5.svg'},
+      { name: 'PostgreSQL', logo: './postgresql.svg'},
+      { name: 'Heroku', logo: './heroku.svg'},
+    ],
     link: "https://okasan-food-karasugummi-11b736e4f407.herokuapp.com/",
   },
   {
@@ -32,7 +53,14 @@ export const projects = [
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
     image: "./watchlist.gif",
-    stack: ['Rails', 'Vanilla JavaScript', 'CSS', 'HTML', 'PostgreSQL', 'Heroku'],
+    stack: [
+      { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
+      { name: 'Vanilla JS', logo: './javascript.svg'},
+      { name: 'CSS', logo: './css3.svg'},
+      { name: 'HTML', logo: './html5.svg'},
+      { name: 'PostgreSQL', logo: './postgresql.svg'},
+      { name: 'Heroku', logo: './heroku.svg'},
+    ],
     link: "https://kevin-watchlist-001-ccc2c6f4cc36.herokuapp.com/",
   },
 ];
