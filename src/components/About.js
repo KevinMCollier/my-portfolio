@@ -27,7 +27,12 @@ export default function About() {
         <div className="mb-8 sm:ml-4 leading-relaxed sm:w-1/2">
           <p className="mb-4">I am a Full-Stack Web Developer with a passion for learning.</p>
           <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
-          <p>When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. Pizza, anyone?</p>
+          <p>When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo.
+            <span onMouseEnter={() => setShowMap(true)} onMouseLeave={() => setShowMap(false)}>
+              Pizza, anyone?
+            </span>
+          </p>
+          {showMap && <Map />}
         </div>
       </div>
     </section>
