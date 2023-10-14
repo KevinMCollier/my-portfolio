@@ -35,7 +35,7 @@ export const projects = [
     title: "Okaasan Food",
     subtitle: "Rails",
     description:
-      "A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization.",
+      "A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization.",
     image: "./okaasan-food.gif",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},

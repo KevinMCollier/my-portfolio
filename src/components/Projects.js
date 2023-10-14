@@ -14,16 +14,15 @@ export default function Projects() {
         </div>
         <div className="flex flex-col items-start -m-4">
           {projects.map((project) => (
-            <div key={project.image} className="flex flex-col-reverse sm:flex-row w-full sm:p-8 p-4 sm:border-b border-gray-300">
+            <div key={project.image} className="flex flex-col-reverse sm:flex-row w-full sm:p-8 p-4 sm:border-b border-gray-300 items-start">
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <img
                   alt="gallery"
-                  className="w-full object-cover object-center shadow-2xl"
-                  style={{ height: '250px', width: '1000px' }}
+                  className="w-full h-auto object-cover object-center shadow-2xl sm:w-full sm:h-80"
                   src={project.image}
                 />
               </a>
-              <div className="sm:ml-8 flex-row mb-6">
+              <div className="sm:ml-8 flex-row mb-6 sm:w-2/3">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold hover:text-cyan-700 uppercase tracking-wider">{project.title}</h2>
                 </a>
