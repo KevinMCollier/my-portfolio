@@ -1,6 +1,9 @@
 import React from "react";
+import Map from "./Map";
 
 export default function About() {
+  const [showMap, setShowMap] = useState(false);
+
   return (
     <section id="banner">
       <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
