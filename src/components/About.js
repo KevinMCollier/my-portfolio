@@ -31,8 +31,8 @@ export default function About() {
           <p className="font-medium" onClick={() => setShowMap(!showMap)}>
             Pizza, anyone? 👉
           </p>
-          {showMap && <Map />}
         </div>
+        {showMap && <div className="sm:w-1/2"><Map /></div>}
       </div>
     </section>
   );
