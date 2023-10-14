@@ -3,7 +3,7 @@ export const projects = [
     title: "OnTrack",
     subtitle: "Rails and JavaScript",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A progressive web-app that makes learning more engaging through personalized assignments and interactive study buddy. Powerwed by Chat GPT using the Open AI API.",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
       { name: 'Stimulus JS', logo: './stimulus.svg'},
@@ -19,7 +19,7 @@ export const projects = [
     title: "Haiku Weather",
     subtitle: "React and Rails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A weather app providing haikus based on location and weather. Integrated RESTful API structure with a Rails api backend connected to a React frontend.",
     image: "./weather-haiku.gif",
     stack: [
       { name: 'React JS', logo: './react.svg'},
@@ -35,7 +35,7 @@ export const projects = [
     title: "Okaasan Food",
     subtitle: "Rails",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization.",
     image: "./okaasan-food.gif",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
@@ -51,7 +51,7 @@ export const projects = [
     title: "Movie Watch List",
     subtitle: "Rails and JavaScript",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium dolore rerum laborum iure enim sint nemo omnis voluptate exercitationem eius?",
+      "A simple library for users to organize their personal list of movies.",
     image: "./watchlist.gif",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
