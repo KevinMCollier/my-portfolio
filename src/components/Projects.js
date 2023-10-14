@@ -26,7 +26,7 @@ export default function Projects() {
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold hover:text-cyan-700 uppercase tracking-wider">{project.title}</h2>
                 </a>
-                <p className="text-left text-xs mb-6">
+                <p className="text-left text-s mb-6">
                   {project.description}
                 </p>
                 <div className="flex flex-wrap">
