@@ -31,7 +31,7 @@ export default function Map() {
   return (
 
     <section id="map" className="relative">
-      <div ref={mapContainer} style={{ width: '50%', height: '300px', margin: 'auto' }}></div>
+      <div ref={mapContainer} style={{ width: '500px', height: '500px', margin: 'auto' }}></div>
     </section>
   );
 }
