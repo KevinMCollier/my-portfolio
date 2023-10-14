@@ -3,7 +3,7 @@ export const projects = [
     title: "OnTrack",
     subtitle: "Rails and JavaScript",
     description:
-      "A progressive web-app that makes learning more engaging through personalized assignments and interactive study buddy. Powerwed by Chat GPT using the Open AI API.",
+      "An edtech app that makes learning more engaging through personalized assignments and an interactive study buddy. OnTrack creates interactive projects that align with the learning goals, interests, and hobbies of each user. Throughout their learning journey, users are encouraged and supported by their own animal buddy. OnTrack is powered by ChatGPT and the Open AI API. Worked as the team lead with a group of four developers to create OnTrack.",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
       { name: 'Stimulus JS', logo: './stimulus.svg'},
@@ -19,7 +19,7 @@ export const projects = [
     title: "Haiku Weather",
     subtitle: "React and Rails",
     description:
-      "A weather app providing haikus based on location and weather. Integrated RESTful API structure with a Rails api backend connected to a React frontend.",
+      "A weather app providing haikus based on location and weather. Designed using RESTful API principles with a React frontend that fetches from a Rails backend with exposed API endpoints. Created this app as a solo-project to gain experience in both developing APIs and using React JS.",
     image: "./weather-haiku.gif",
     stack: [
       { name: 'React JS', logo: './react.svg'},
@@ -35,7 +35,7 @@ export const projects = [
     title: "Okaasan Food",
     subtitle: "Rails",
     description:
-      "A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization.",
+      "A marketplace, food delivery service app conecting users with homemade meals. Incorporates devise and pundit gems from Ruby for authentication and authorization. Worked as the team lead with a group of four developers to create Okaasan Food.",
     image: "./okaasan-food.gif",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
@@ -51,7 +51,7 @@ export const projects = [
     title: "Movie Watch List",
     subtitle: "Rails and JavaScript",
     description:
-      "A simple library for users to organize their personal list of movies.",
+      "A simple library for users to organize their personal list of movies. Utilized Vanilla JavaScript for basic features. Created this app as a solo project to gain experience in full stack development and production.",
     image: "./watchlist.gif",
     stack: [
       { name: 'Ruby on Rails', logo: './rubyonrails.svg'},
