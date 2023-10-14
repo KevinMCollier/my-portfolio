@@ -11,7 +11,7 @@ export default function Map() {
     const map = new mapboxgl.Map({
       container: mapContainer.current, // Container element
       style: 'mapbox://styles/mapbox/streets-v11', // Style URL
-      center: [-99.220630, 30.071480], // Longitude and latitude of your favorite restaurant
+      center: [139.7174347, 35.633422], // Longitude and latitude of your favorite restaurant
       zoom: 15 // Zoom level
     });
 
@@ -20,7 +20,7 @@ export default function Map() {
 
     // Add a marker at the specified location
     new mapboxgl.Marker()
-      .setLngLat([139.7216, 35.6281])
+      .setLngLat([139.7174347, 35.633422])
       .addTo(map);
 
     // Clean up on component unmount
