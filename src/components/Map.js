@@ -15,9 +15,14 @@ export default function Map() {
       zoom: 15 // Zoom level
     });
 
-    const marker1 = new mapboxgl.Marker()
+    const marker = new mapboxgl.Marker()
       .setLngLat([139.7174347, 35.633422])
       .addTo(map);
+
+    const popup = new mapboxgl.Popup({ offset: 25 })
+      .setText("Address: 123 Tokyo St, Tokyo, Japan");
+
+    marker.setPopup(popup);
 
     // Add navigation control (zoom buttons)
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
@@ -30,7 +35,8 @@ export default function Map() {
   return (
 
     <section id="map" className="relative">
-      <div ref={mapContainer} style={{ width: '450px', height: '300px', margin: 'auto', position: 'relative' }}></div>
+      <h2 className="text-center text-l font-bold mb-2">This week's recommendation: Gonzo</h2>
+      <div ref={mapContainer} style={{ width: '450px', height: '220px', margin: 'auto', position: 'relative' }}></div>
     </section>
   );
 }

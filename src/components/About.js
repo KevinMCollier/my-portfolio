@@ -29,7 +29,7 @@ export default function About() {
           <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
           <p className="mb-4"> When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. </p>
           <p className="font-medium" onClick={() => setShowMap(!showMap)}>
-            Pizza, anyone? 👉
+            Here is one of my favorite restaurants 👉
           </p>
         </div>
         {showMap && <div className="sm:w-1/2"><Map /></div>}
