@@ -96,6 +96,6 @@ export const locations = [
     name: "Gonzo",
     description: "My favorite pizza place",
     address: "〒141-0021 Tokyo, Shinagawa City, Kamiosaki, 3 Chome−2−9, Aqua Meguro, 1F",
-    coordinates: { lng: 139.7216, lat: 35.6281 }
+    coordinates: { lng: 139.7174347, lat: 35.633422 }
   }
 ]
