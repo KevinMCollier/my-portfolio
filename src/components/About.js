@@ -23,16 +23,15 @@ export default function About() {
             src="./cropped-profile.jpg"
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left md:mb-0 items-center">
-          <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">
-            About Me
+        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col sm:items-start md:text-left md:mb-0">
+          <h1 className="title-font sm:text-xl text-l mb-2 font-medium text-gray-900 text-center md:text-left">
+            Career Overview
           </h1>
-          <h3>Highlights</h3>
           {highlights.map((highlight, index) => (
-            <div key={index}>
-              <p className="mb-1">{highlight.description}</p>
+            <div key={index} className="mb-2 text-xs bg-white p-2 shadow rounded">
+              <p>{highlight.name} from {highlight.period}</p>
             </div>
-          ))};
+          ))}
         </div>
       </div>
       <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-center justify-center">
