@@ -98,5 +98,13 @@ export const locations = [
     address: "〒141-0021 Tokyo, Shinagawa City, Kamiosaki, 3 Chome−2−9, Aqua Meguro, 1F",
     coordinates: { lng: 139.7174347, lat: 35.633422 },
     link: "https://www.google.com/search?q=gonzo+meguro"
+  },
+
+  {
+    name: "T.Y. Harbor",
+    description: "Riverside beers",
+    address: "〒140-0002 Tokyo, Shinagawa City, 2 Chome-1-3 Higashishinagawa",
+    coordinates: { lng: 139.7473419, lat: 35.6229831 },
+    link: "https://www.google.com/search?q=t.y.harbor"
   }
 ]
