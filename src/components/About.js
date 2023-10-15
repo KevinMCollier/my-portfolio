@@ -15,7 +15,7 @@ export default function About() {
 
   return (
     <section id="banner">
-      <div className="container mx-auto flex px-10 py-10 md:flex-row flex-col items-center">
+      <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0 items-center">
           <img
             className="object-cover object-center rounded-full mx-auto w-64 h-64"
@@ -23,19 +23,24 @@ export default function About() {
             src="./cropped-profile.jpg"
           />
         </div>
-        <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col sm:items-start md:text-left md:mb-0">
+        <div className="lg:flex-grow md:w-1/2 flex flex-col sm:items-start md:mb-0">
           <h1 className="title-font sm:text-xl text-l mb-2 font-medium text-gray-900 text-center md:text-left">
             Career Overview
           </h1>
           {highlights.map((highlight, index) => (
-            <div key={index} className="mb-2 text-xs bg-white p-2 shadow rounded">
-              <p>{highlight.name} from {highlight.period}</p>
+            <div key={index} className="mb-2 text-sm flex w-full sm:w-3/4 border-b border-gray-300">
+              <p className="w-1/3">{highlight.period}</p>
+              <p className="w-1/3">{highlight.name}</p>
+              <p className="w-1/3">{highlight.location}</p>
             </div>
           ))}
         </div>
       </div>
       <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-center justify-center">
         <div className="mb-8 leading-relaxed sm:w-3/4">
+          <h1 className="title-font sm:text-xl text-l mb-2 font-medium text-gray-900 text-center md:text-left">
+            About Me
+          </h1>
           <p className="mb-4">I am a Full-Stack Web Developer with a passion for learning.</p>
           <p className="mb-4">
             My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀
