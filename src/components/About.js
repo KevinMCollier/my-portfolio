@@ -1,10 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Map from "./Map";
 import { locations } from "../data";
 import './About.css';
 
 export default function About() {
   const [showMap, setShowMap] = useState(false);
+  const [currentLocation, setCurrentLocation] = useState(null);
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * locations.length);
+    setCurrentLocation(locations[randomIndex]);
+  }, []);
 
   return (
     <section id="banner">
@@ -31,16 +37,16 @@ export default function About() {
           <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
           <p className="mb-4"> When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. </p>
           <p className="font-medium cursor-pointer flashing-text" onClick={() => setShowMap(!showMap)}>
-            {locations[0].description}, anyone? 👉
+            {currentLocation && currentLocation.description}, anyone? 👉
           </p>
         </div>
         {showMap && <div className="sm:w-1/2">
           <Map
-            lat={locations[0].coordinates.lat}
-            lng={locations[0].coordinates.lng}
-            address={locations[0].address}
-            name={locations[0].name}
-            link={locations[0].link}
+            lat={currentLocation && currentLocation.coordinates.lat}
+            lng={currentLocation && currentLocation.coordinates.lng}
+            address={currentLocation && currentLocation.address}
+            name={currentLocation && currentLocation.name}
+            link={currentLocation && currentLocation.link}
           />
         </div>}
       </div>
