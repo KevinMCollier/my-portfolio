@@ -113,30 +113,30 @@ export const highlights = [
 
   {
     name: "Transitioned from Supervisor to Programming Specialist",
-    period: "10/2023"
+    period: "Oct-2023"
   },
   {
     name: "Completed Web Dev bootcamp at Le Wagon Tokyo",
-    period: "03/2023 - 09/2023"
+    period: "Mar-2023 - Sep-2023"
   },
 
   {
     name: "Graduated from MBA program",
-    period: "05/2022"
+    period: "May-2022"
   },
 
   {
     name: "Started MBA program (University of Arizona)",
-    period: "01/2020"
+    period: "Jan-2020"
   },
 
   {
     name: "Promoted to Supervisor (TGG)",
-    period: "04/2020"
+    period: "Apr-2020"
   },
 
   {
     name: "Joined TGG as Programming Specialist",
-    period: "04/2018"
+    period: "Apr-2018"
   }
 ]
