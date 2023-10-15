@@ -36,7 +36,7 @@ export default function Map({ lng, lat, address, name, link }) {
 
     <section id="map" className="relative">
       <h2 className="text-center text-l font-bold mb-2">
-        I recommend...
+        My recommendation:
         <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline ml-1">
           {name}
         </a>
