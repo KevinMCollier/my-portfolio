@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Map from "./Map";
 import { locations } from "../data";
+import './About.css';
 
 export default function About() {
   const [showMap, setShowMap] = useState(false);
@@ -29,8 +30,8 @@ export default function About() {
           <p className="mb-4">I am a Full-Stack Web Developer with a passion for learning.</p>
           <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
           <p className="mb-4"> When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. </p>
-          <p className="font-medium" onClick={() => setShowMap(!showMap)}>
-            Here is one of my favorite restaurants 👉
+          <p className="font-medium cursor-pointer flashing-text" onClick={() => setShowMap(!showMap)}>
+            Pizza, anyone? 🍕 👉
           </p>
         </div>
         {showMap && <div className="sm:w-1/2">
