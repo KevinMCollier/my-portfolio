@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Map from "./Map";
 import { locations } from "../data";
+import { highlights } from "../data";
 import './About.css';
 
 export default function About() {
@@ -26,9 +27,12 @@ export default function About() {
           <h1 className="title-font sm:text-4xl text-3xl mb-2 font-medium text-gray-900">
             About Me
           </h1>
-          <p className="mb-8 leading-relaxed">
-          Placeholder for work history.
-          </p>
+          <h3>Highlights</h3>
+          {highlights.map((highlight, index) => (
+            <div key={index}>
+              <p className="mb-1">{highlight.description}</p>
+            </div>
+          ))};
         </div>
       </div>
       <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-center justify-center">

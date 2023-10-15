@@ -108,3 +108,18 @@ export const locations = [
     link: "https://www.google.com/search?q=t.y.harbor"
   }
 ]
+
+export const highlights = [
+  {
+    name: "Web Dev",
+    description: "Web Development Bootcamp - Le Wagon"
+  },
+  {
+    name: "MBA",
+    description: "MBA - University of Arizona"
+  },
+  {
+    name: "Undergraduate",
+    description: "Bachelor's in Creative Writing - University of Arizona"
+  }
+]
