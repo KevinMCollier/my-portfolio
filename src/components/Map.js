@@ -36,12 +36,12 @@ export default function Map({ lng, lat, address, name, link }) {
 
     <section id="map" className="relative">
       <h2 className="text-center text-l font-bold mb-2">
-        This week's recommendation:
+        I recommend...
         <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline ml-1">
           {name}
         </a>
       </h2>
-      <div ref={mapContainer} style={{ width: '450px', height: '220px', margin: 'auto', position: 'relative' }}></div>
+      <div ref={mapContainer} style={{ width: '700px', height: '350px', margin: 'auto', position: 'relative' }}></div>
     </section>
   );
 }

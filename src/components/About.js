@@ -31,16 +31,19 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-start">
-        <div className="mb-8 sm:ml-4 leading-relaxed sm:w-1/2">
+      <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-center justify-center">
+        <div className="mb-8 leading-relaxed sm:w-3/4">
           <p className="mb-4">I am a Full-Stack Web Developer with a passion for learning.</p>
-          <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
+          <p className="mb-4">
+            My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀
+          </p>
           <p className="mb-4"> When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. </p>
           <p className="font-medium cursor-pointer flashing-text" onClick={() => setShowMap(!showMap)}>
             {currentLocation && currentLocation.description}, anyone? 👉
           </p>
         </div>
-        {showMap && <div className="sm:w-1/2">
+      </div>
+        {showMap && <div className="container mx-auto flex px-10 md:py-4 md:flex-row flex-col items-center justify-center sm:w-3/4">
           <Map
             lat={currentLocation && currentLocation.coordinates.lat}
             lng={currentLocation && currentLocation.coordinates.lng}
@@ -49,7 +52,6 @@ export default function About() {
             link={currentLocation && currentLocation.link}
           />
         </div>}
-      </div>
     </section>
   );
 }
