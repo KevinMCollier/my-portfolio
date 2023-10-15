@@ -31,7 +31,7 @@ export default function About() {
           <p className="mb-4">My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. At this point, I knew that I wanted to have a career where I could contribute hands-on to these solutions. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀</p>
           <p className="mb-4"> When I'm not coding, you can find me walking my dog or eating at one of my favorite restaurants around Tokyo. </p>
           <p className="font-medium cursor-pointer flashing-text" onClick={() => setShowMap(!showMap)}>
-            Pizza, anyone? 🍕 👉
+            {locations[0].description}, anyone? 👉
           </p>
         </div>
         {showMap && <div className="sm:w-1/2">
@@ -40,6 +40,7 @@ export default function About() {
             lng={locations[0].coordinates.lng}
             address={locations[0].address}
             name={locations[0].name}
+            link={locations[0].link}
           />
         </div>}
       </div>

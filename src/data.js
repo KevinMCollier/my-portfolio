@@ -94,8 +94,9 @@ export const skills = [
 export const locations = [
   {
     name: "Gonzo",
-    description: "My favorite pizza place",
+    description: "Pizza",
     address: "〒141-0021 Tokyo, Shinagawa City, Kamiosaki, 3 Chome−2−9, Aqua Meguro, 1F",
-    coordinates: { lng: 139.7174347, lat: 35.633422 }
+    coordinates: { lng: 139.7174347, lat: 35.633422 },
+    link: "https://www.google.com/search?q=gonzo+meguro"
   }
 ]

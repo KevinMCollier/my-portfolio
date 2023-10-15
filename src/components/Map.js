@@ -3,7 +3,7 @@ import mapboxgl from 'mapbox-gl';
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-export default function Map({ lng, lat, address, name }) {
+export default function Map({ lng, lat, address, name, link }) {
   const mapContainer = useRef(null);
 
   useEffect(() => {
@@ -35,7 +35,12 @@ export default function Map({ lng, lat, address, name }) {
   return (
 
     <section id="map" className="relative">
-      <h2 className="text-center text-l font-bold mb-2">This week's recommendation: {name}</h2>
+      <h2 className="text-center text-l font-bold mb-2">
+        This week's recommendation:
+        <a href={link} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline ml-1">
+          {name}
+        </a>
+      </h2>
       <div ref={mapContainer} style={{ width: '450px', height: '220px', margin: 'auto', position: 'relative' }}></div>
     </section>
   );
