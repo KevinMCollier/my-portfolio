@@ -10,18 +10,17 @@ export default function Map() {
     // Initialize the map
     const map = new mapboxgl.Map({
       container: mapContainer.current, // Container element
-      style: 'mapbox://styles/mapbox/streets-v11', // Style URL
+      style: 'mapbox://styles/mapbox/streets-v12', // Style URL
       center: [139.7174347, 35.633422], // Longitude and latitude of your favorite restaurant
       zoom: 15 // Zoom level
     });
 
-    // Add navigation control (zoom buttons)
-    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-    // Add a marker at the specified location
-    new mapboxgl.Marker()
+    const marker1 = new mapboxgl.Marker()
       .setLngLat([139.7174347, 35.633422])
       .addTo(map);
+
+    // Add navigation control (zoom buttons)
+    map.addControl(new mapboxgl.NavigationControl(), 'top-right');
 
     // Clean up on component unmount
     return () => map.remove();
@@ -31,7 +30,7 @@ export default function Map() {
   return (
 
     <section id="map" className="relative">
-      <div ref={mapContainer} style={{ width: '500px', height: '500px', margin: 'auto' }}></div>
+      <div ref={mapContainer} style={{ width: '450px', height: '300px', margin: 'auto', position: 'relative' }}></div>
     </section>
   );
 }
