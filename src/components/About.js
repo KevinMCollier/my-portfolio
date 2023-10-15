@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Map from "./Map";
+import { locations } from "../data";
 
 export default function About() {
   const [showMap, setShowMap] = useState(false);
@@ -32,7 +33,14 @@ export default function About() {
             Here is one of my favorite restaurants 👉
           </p>
         </div>
-        {showMap && <div className="sm:w-1/2"><Map /></div>}
+        {showMap && <div className="sm:w-1/2">
+          <Map
+            lat={locations[0].coordinates.lat}
+            lng={locations[0].coordinates.lng}
+            address={locations[0].address}
+            name={locations[0].name}
+          />
+        </div>}
       </div>
     </section>
   );
