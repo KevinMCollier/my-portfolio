@@ -14,8 +14,8 @@ export default function About() {
   }, []);
 
   return (
-    <section id="banner">
-      <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+    <section id="about">
+      <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0 items-center">
           <img
             className="object-cover object-center rounded-full mx-auto w-64 h-64"
@@ -30,8 +30,7 @@ export default function About() {
           {highlights.map((highlight, index) => (
             <div key={index} className="mb-2 text-sm flex w-full sm:w-3/4 border-b border-gray-300">
               <p className="w-1/3">{highlight.period}</p>
-              <p className="w-1/3">{highlight.name}</p>
-              <p className="w-1/3">{highlight.location}</p>
+              <p className="w-2/3">{highlight.name}</p>
             </div>
           ))}
         </div>
