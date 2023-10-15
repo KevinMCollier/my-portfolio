@@ -3,25 +3,29 @@ import mapboxgl from 'mapbox-gl';
 
 mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
-export default function Map() {
+export default function Map({ lng, lat, address, name }) {
   const mapContainer = useRef(null);
 
   useEffect(() => {
     // Initialize the map
     const map = new mapboxgl.Map({
       container: mapContainer.current, // Container element
-      style: 'mapbox://styles/mapbox/streets-v11', // Style URL
-      center: [-99.220630, 30.071480], // Longitude and latitude of your favorite restaurant
+      style: 'mapbox://styles/mapbox/streets-v12', // Style URL
+      center: [lng, lat], // Longitude and latitude of your favorite restaurant
       zoom: 15 // Zoom level
     });
 
+    const marker = new mapboxgl.Marker()
+      .setLngLat([lng, lat])
+      .addTo(map);
+
+    const popup = new mapboxgl.Popup({ offset: 25 })
+      .setText(`Address: ${address}`);
+
+    marker.setPopup(popup);
+
     // Add navigation control (zoom buttons)
     map.addControl(new mapboxgl.NavigationControl(), 'top-right');
-
-    // Add a marker at the specified location
-    new mapboxgl.Marker()
-      .setLngLat([139.7216, 35.6281])
-      .addTo(map);
 
     // Clean up on component unmount
     return () => map.remove();
@@ -31,7 +35,8 @@ export default function Map() {
   return (
 
     <section id="map" className="relative">
-      <div ref={mapContainer} style={{ width: '50%', height: '300px', margin: 'auto' }}></div>
+      <h2 className="text-center text-l font-bold mb-2">This week's recommendation: {name}</h2>
+      <div ref={mapContainer} style={{ width: '450px', height: '220px', margin: 'auto', position: 'relative' }}></div>
     </section>
   );
 }
