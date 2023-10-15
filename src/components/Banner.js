@@ -10,7 +10,7 @@ export default function Banner() {
             <br className="hidden lg:inline-block" /> I build apps that make life a piece of cake 🍰
           </h1>
           <p className="mb-1 leading-relaxed">
-            Chances are I'm also eating a piece of cake.
+            Chances are I'm also eating a piece of cake right now.
           </p>
           <p className="mb-8 leading-relaxed">
             When I'm not coding, you can find me at one of my favorite restaurants across Tokyo.
