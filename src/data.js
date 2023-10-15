@@ -108,3 +108,32 @@ export const locations = [
     link: "https://www.google.com/search?q=t.y.harbor"
   }
 ]
+
+export const highlights = [
+
+  {
+    name: "Supervisor",
+    location: "Tokyo Global Gateway",
+    description: "Recruited, hired, trained, and managed over 300+ international educators at Tokyo Global Gateway.",
+    period: "04/2020 - 09/2023"
+  },
+  {
+    name: "Programming Specialist",
+    location: "Tokyo Global Gateway",
+    description: "Designed, implemented, and delivered educational lessons on programming for children in collaboration with the Tokyo Metropolitan Board of Education",
+    period: "04/2018 - 04/2020, 10/2023 - Present"
+  },
+
+  {
+    name: "Web Development Graduate",
+    location: "Le Wagon",
+    description: "Completed intensive Web Dev Bootcamp",
+    period: "03/2023 - 09/2023"
+  },
+  {
+    name: "MBA graduate",
+    location: "University of Arizona",
+    description: "Received MBA from the University of Arizona",
+    period: "01/2020 - 05/2022"
+  }
+]
