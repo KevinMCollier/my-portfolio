@@ -112,20 +112,20 @@ export const locations = [
 export const highlights = [
 
   {
+    name: "Programming Specialist",
+    location: "Tokyo Global Gateway",
+    description: "Designed, implemented, and delivered educational lessons on programming for children in collaboration with the Tokyo Metropolitan Board of Education",
+    period: "04/2018 - Present"
+  },
+  {
     name: "Supervisor",
     location: "Tokyo Global Gateway",
     description: "Recruited, hired, trained, and managed over 300+ international educators at Tokyo Global Gateway.",
     period: "04/2020 - 09/2023"
   },
-  {
-    name: "Programming Specialist",
-    location: "Tokyo Global Gateway",
-    description: "Designed, implemented, and delivered educational lessons on programming for children in collaboration with the Tokyo Metropolitan Board of Education",
-    period: "04/2018 - 04/2020, 10/2023 - Present"
-  },
 
   {
-    name: "Web Development Graduate",
+    name: "Web Dev Bootcamp",
     location: "Le Wagon",
     description: "Completed intensive Web Dev Bootcamp",
     period: "03/2023 - 09/2023"
