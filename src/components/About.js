@@ -14,8 +14,8 @@ export default function About() {
   }, []);
 
   return (
-    <section id="banner">
-      <div className="container mx-auto flex px-5 py-5 md:flex-row flex-col items-center">
+    <section id="about">
+      <div className="container mx-auto flex px-5 py-20 md:flex-row flex-col items-center">
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-full mb-10 md:mb-0 items-center">
           <img
             className="object-cover object-center rounded-full mx-auto w-64 h-64"
