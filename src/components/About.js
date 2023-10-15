@@ -30,8 +30,7 @@ export default function About() {
           {highlights.map((highlight, index) => (
             <div key={index} className="mb-2 text-sm flex w-full sm:w-3/4 border-b border-gray-300">
               <p className="w-1/3">{highlight.period}</p>
-              <p className="w-1/3">{highlight.name}</p>
-              <p className="w-1/3">{highlight.location}</p>
+              <p className="w-2/3">{highlight.name}</p>
             </div>
           ))}
         </div>
