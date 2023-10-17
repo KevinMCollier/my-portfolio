@@ -15,7 +15,7 @@ export default function Projects() {
         <div className="flex flex-col items-start -m-4">
           {projects.map((project) => (
             <div key={project.image} className="flex flex-col-reverse sm:flex-row w-full sm:p-8 p-4 sm:border-b border-gray-300 items-start">
-              <div className="w-full sm:w-1/2 h-80 flex items-center justify-center">
+              <div className="w-full sm:w-1/2 h-80 items-center justify-center">
                 <a href={project.link} target="_blank" rel="noopener noreferrer">
                   <img
                     alt="gallery"
@@ -24,25 +24,28 @@ export default function Projects() {
                   />
                 </a>
               </div>
-              <div className="sm:ml-8 flex-row mb-6 sm:w-1/2">
-                <a href={project.link} target="_blank" rel="noopener noreferrer">
-                  <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold hover:text-cyan-700 uppercase tracking-wider">{project.title}</h2>
-                </a>
-                <p className="text-left text-s mb-6">
-                  {project.description}
-                </p>
-                <div className="flex flex-wrap">
-                  {project.stack.map((tech, index) =>(
-                    <div className="sm:text-left mr-3 flex items-center">
-                      <div className="hover:bg-yellow-200 flex items-center">
-                        <img src={tech.logo} alt={tech.name} className="w-4 h-4 mr-1" />
-                        <p>{tech.name}</p>
+              <div className="sm:ml-8 mb-6 sm:w-1/2">
+                <div className="flex flex-col items-start">
+                  <a href={project.link} target="_blank" rel="noopener noreferrer">
+                    <h2 className="sm:text-xl sm:text-left mb-2 text-2xl font-semibold hover:text-cyan-700 uppercase tracking-wider">{project.title}</h2>
+                  </a>
+                  <div className="flex flex-wrap py-3 mb-2">
+                    {project.stack.map((tech, index) =>(
+                      <div className="sm:text-left mr-3 flex items-center">
+                        <div className="hover:bg-yellow-200 flex items-center">
+                          <img src={tech.logo} alt={tech.name} className="w-4 h-4 mr-1" />
+                          <p>{tech.name}</p>
+                        </div>
+                        <div className="ml-2">
+                          {index !== project.stack.length - 1 ? ' |' : ''}
+                        </div>
                       </div>
-                      <div className="ml-2">
-                        {index !== project.stack.length - 1 ? ' |' : ''}
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
+                  <p className="text-left text-sx font-semibold">Overview:</p>
+                  <p className="text-left text-s mb-6">
+                    {project.description}
+                  </p>
                 </div>
               </div>
               <br></br>

@@ -106,7 +106,23 @@ export const locations = [
     address: "〒140-0002 Tokyo, Shinagawa City, 2 Chome-1-3 Higashishinagawa",
     coordinates: { lng: 139.7473419, lat: 35.6229831 },
     link: "https://www.google.com/search?q=t.y.harbor"
-  }
+  },
+
+  {
+    name: "T.Y. Harbor",
+    description: "Craft beer by the canal",
+    address: "〒140-0002 Tokyo, Shinagawa City, 2 Chome-1-3 Higashishinagawa",
+    coordinates: { lng: 139.7473419, lat: 35.6229831 },
+    link: "https://www.google.com/search?q=t.y.harbor"
+  },
+
+  {
+    name: "Rigoletto Spice Market",
+    description: "Ceviche",
+    address: "〒158-0094 Tokyo, Setagaya City, 2 Chome-21-1 Futakotamaga Rise Station Market 1F",
+    coordinates: { lng: 139.6281756, lat: 35.6126072 },
+    link: "https://www.google.com/search?q=rigoletto+futakotamagawa"
+  },
 ]
 
 export const highlights = [
