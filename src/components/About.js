@@ -42,7 +42,7 @@ export default function About() {
           </h1>
           <p className="mb-4">I am a Full-Stack Web Developer with a passion for learning.</p>
           <p className="mb-4">
-            My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. I want to have a career where I can contribute hands-on to solutions in both the education field and beyond. My long term goal is to create apps that improve the way we learn and grow. 🌱 🚀
+            My interest in software engineering started to blossom as I began looking further into potential solutions to problems in the L&D field. I want to have a career where I can contribute hands-on to solutions in both the education field and beyond. My long term goal is to create apps that improve the way we learn and grow. <span role="img" aria-label="learn and grow">🌱 🚀</span>
           </p>
           <p className="mb-4">
             Before transitioning into web development, I worked as a supervisor of over 300+ international educators at Tokyo Global Gateway. Leading this initiative taught me how to work within a diverse team while also meeting the high standards of stakeholders such as the Tokyo Metropolitan Board of Education and Gakken Holdings.
